@@ -7,6 +7,7 @@ In this way, the developers can develop applications easily and quickly accordin
 The EnOS API is also called the Envision EnOS open platform (EEOP) interface. Applications can get access to asset data on EnOS cloud via EEOP, including asset relation inquiry, and inquiry of real-time and history data.
 
 EnOS mainly provides the following APIs:
+
 - Registration, acquisition, modification and deletion of device assets
 - Real-time and historical data of devices
 - Application related development interfaces

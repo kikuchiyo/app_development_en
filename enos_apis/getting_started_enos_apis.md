@@ -1,96 +1,84 @@
 # Getting started with EnOS™ APIs
 
-This article will quickly boot you into invoking the EnOS™ API services that are opened by the EnOS™ System. You need to complete the following steps in turn:
+This topic will quickly get you started with invoking the EnOS™ APIs that are opened by the EnOS™ System. The basic flow is as follows:
 
-![](media/apiflow.png)
+1. Obtain API documentation.
+2. Register an application on EnOS to get the application key and secret.
+3. Call the API by presenting the application key and secret, and providing other required request parameters as instructed in the API documentation.
+
 
 **Three elements for invoking APIs**
 
-Invoking APIs requires three basic conditions:
+Invoking APIs requires three types of parameters:
 
-- **API**: The API you are about to invoke, defining the API parameters.
-- **Applicaiton app**: As the identity when you invoke an API, AppKey and AppSecret are used to verify your identity.
-- **Token**: As the external interface of platform resources, EnOS™ API requires users to obtain the resources with permission through the account number, and Token can be obtained by invoking the login interface.
-  Details will be given below to explain how to have three conditions and provide a Demon of API invocation for your reference.
+- API: The name of the API that you are about to invoke and the request paramters as required by the API.
+- Application identity: As the identity when you invoke an API, `AppKey` and `AppSecret` are used to verify your identity.
+- Token: to access the resources in the EnOS Cloud, a API requester must present the username to be authenticated and access the authorized resources. You can obtain the token by invoking the `login` API.
 
-## Step 1: Obtain EnOS™ API files
-EnOS™ System provides unified interface files for easy access by developers. File address: **EnOS™ Console > API Services > EnOS API**
+## Before you start
 
-1. View the grouping of interface files
+Ensure you have resources on EnOS that you are authorized to access. The resources can be devices, data, events, user accounts, and so on. So before you start using EnOS APIs, you typically have finished connecting your devices and data into EnOS, and have a user account that has proper access policies assigned through EnOS IAM service.
 
-   First enter the **API service** module of EnOS™ console. Under this module, click the **EnOS™ API** menu to view the grouping of all EnOS™ APIs.
-2. View the details of interface files
+## Step 1: Obtain the EnOS™ API documentation
 
-   You can click the grouping you need to view all the APIs under that grouping.
+1. Click **API Servics > EnOS API** from the left navigation panel to show the list of EnOS APIs.
 
-## Step 2: Create an application, access device
-EnOS™ API is an interface provided by EnOS™ System to manage user’s resources registered in the platform. This tutorial takes access as an example to illustrate how to obtain device access data on the platform through EnOS™ API.
+2. Search the API by name or locate the API from the list directly.
 
-- **Create an application**
+## Step 2: Register an application
 
-An application (APP) is the identity when you invoke an API service. Each APP has a set of Key and Secret, which you can understand as an account and password. When you invoke the API, you need to enter AppKey as a parameter. AppSecret is used for signature calculation, and the gateway verifies that this key authenticates you. Invoking the API requires this APP to have the permission to invoke the API, and any APP currently created on the EnOS™ System has the permission to invoke the EnOS™ API.
-You can create your APP on the **Application management** page of console. Refer to the documentation for details: [Application management](../app_mgmt/app_mgmt_overview). After the creation is successful, the system assigns a pair of AppKey and AppSecret to APP. In the APP management page, click the application name to access details, and you can see the information of AppKey and AppSecret.
+To request the EnOS APIs, you need to register an application in the EnOS cloud and obtain the application key and secret that are assigned by EnOS. The application is the account to use for accessing EnOS APIs. When you invoke an API, you need to present the application key and secret to be authenticated by EnOS.
 
-- **Create assets**
+An application must have the permission to invoke an API, and any application currently registered on EnOS™ has the permission to invoke EnOS™ APIs. The resource authorization, that is which devices or data you can access through the API, is enforced through IAM at the account level.
 
-An asset is a request resource when you invoke an API service. Resources include device, APP, personnel, etc. All the requested resources must be registered on the EnOS™ System in order to obtain relevant data of the resources through corresponding interfaces. Take device resources as an example: You can create a field station, register the device and access the device in the **Asset management** page of console. For specific operation, please refer to the documentation:[Asset Management](https://docs.envisioniot.com/docs/device-connection/en/latest/asset_management/asset_overview.html)
+To register an application, click **Application management** from the left navigation panel. For more information, see [Application management](../app_mgmt/app_mgmt_overview).
 
-*Note: The console provides the corresponding interface test page, which automatically obtains the interface parameters. If APP is not applied, the tool will provide the default APP for the developer*
+After the application is successful registered, EnOS assigns a pair of application key and secret. You can view the application details to access the assigned key-secret pair.
 
-## Step 3: Create an account and give permissions
-Most EnOS™ APIs adopt data authentication to guarantee the security of data requests, that is, when requesting a resource, it is necessary to verify whether the requested account has the permission of a resource. Therefore, to invoke the EnOS™ API, you must register your account and its resource permissions with the EnOS™ System.
-EnOS™ System provides a complete set of account creation, management and authorization system. For specific operation of creating account and permission, please see: [User Management](https://docs.envisioniot.com/docs/enos/en/latest/iam.html)
-Please follow the following steps according to the files:
+## Step 3: Invoking an API
 
-- **Create a user**
+EnOS™ provides Java SDKs for you to program Java codes that invoke EnOS APIs.
 
-Create the account passed in when you need to invoke an interface
+This following code samples show you how to use the EnOS™ Java SDKs to obtain the real-time and historical data of assets.
 
-- **Create a policy and assign application permission and data permissions**
-Abstract the permissions of the account into a policy, and assign the applications and data required for interface invocation to this policy.
+1. Obtain token by calling the `login` API:
 
-- **Assign policy permissions to users**
+  ```java
+  String baseUrl = "http://developer.envisioncn.com/eeop";
+  String appId = "App Id";
+  String appSec = "App Secret";
+  String name = "name";
+  String password = "password";
+  EnvisionClient client = new EnvisionDefaultClient( baseUrl , appId, appSec);
+  UserLoginRequest loginRequest = new UserLoginRequest();
+  loginRequest.setPassword(password);
+  loginRequest.setName(name);
+  UserLoginResponse loginResponse = client.execute(loginRequest);
+  String m_token = loginResponse.getAccessToken();
+  ```
+2. Obtain the real-time data from certain data acquisition points of certain devices.
 
-Assign the policy to the user so that the user has data and application permissions and can pass the permission validation when the interface is invoked.
+  ```java
+  //Device field point list
+  List pointIDList =  Arrays.asList("point_name1", "point_name2", "point_name3");
+  //Device mdmid list
+  List    deviceIDList = Arrays.asList("dev_mdmid1","dev_mdmid1");    
+  //Field point keys
+  List fieldList = Arrays.asList("value", "timestamp");
+  //Master data ID query
+  MdmDomainPointsGetRequest request = new MdmDomainPointsGetRequest(deviceIDList, pointIDList, fieldList);
+  MdmDomainPointsGetResponse response = client.execute(request, token);
+  ```
+3. Obtain historical data from certain devices for a specified range of time
 
-## Step 4: Invoke an API
-
-EnOS™ API provides the java language to invoke SDK [Download](/devportal/index.html#/main/24/168/57baab5ed3eb4806104b045d/consoleMenu2). This tutorial will show you how to use the EnOS™ API SDK to obtain real-time and historical data for access devices
-- **Get Token Using the Login Interface:**
-```java
-String baseUrl = "http://developer.envisioncn.com/eeop";
-String appId = "App Id";
-String appSec = "App Secret";
-String name = "name";
-String password = "password";
-EnvisionClient client = new EnvisionDefaultClient( baseUrl , appId, appSec);
-UserLoginRequest loginRequest = new UserLoginRequest();
-loginRequest.setPassword(password);
-loginRequest.setName(name);
-UserLoginResponse loginResponse = client.execute(loginRequest);
-String m_token = loginResponse.getAccessToken();
-```
-- **Access to Real Time Data of Assets**
-```java
-//Device field point list
-List pointIDList =  Arrays.asList("point_name1", "point_name2", "point_name3");
-//Device mdmid list
-List    deviceIDList = Arrays.asList("dev_mdmid1","dev_mdmid1");    
-//Field point keys
-List fieldList = Arrays.asList("value", "timestamp");
-//Master data ID query
-MdmDomainPointsGetRequest request = new MdmDomainPointsGetRequest(deviceIDList, pointIDList, fieldList);
-MdmDomainPointsGetResponse response = client.execute(request, token);
-```
-- **Access to Historical Data of Assets**
-```java
-//Please use version 0.0.8.9-SNAPSHOT and above:
-String beginTime = "2017-06-01 00:00:00";
-String endTime = "2017-06-04 00:00:00";
-Integer interval = 600;
-Integer limit = null;
-//Master data ID query
-DomainDetailsGetRequestV2 request = new DomainDetailsGetRequestV2(
-        deviceIDList, pointIDList, beginTime, endTime, interval, limit);
-DomainMetricsGetResponse response = client.execute(request, token);
+  ```java
+  //Please use version 0.0.8.9-SNAPSHOT and above:
+  String beginTime = "2017-06-01 00:00:00";
+  String endTime = "2017-06-04 00:00:00";
+  Integer interval = 600;
+  Integer limit = null;
+  //Master data ID query
+  DomainDetailsGetRequestV2 request = new DomainDetailsGetRequestV2(
+          deviceIDList, pointIDList, beginTime, endTime, interval, limit);
+  DomainMetricsGetResponse response = client.execute(request, token);
 ```

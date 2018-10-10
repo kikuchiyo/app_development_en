@@ -31,14 +31,13 @@ Application development
 
 .. toctree::
    :maxdepth: 1
-   :caption: API service
-
-   api_service/api_service_overview
-   api_service/getting_started_api_service
-   api_service/managing_apis
-
-.. toctree::
-   :maxdepth: 1
    :caption: Related services
 
    Device connection <https://docs.envisioniot.com/docs/device_connection/en/latest/>
+
+Downloads
+""""""""
+    pdf_ htmlzip_ epub_
+.. _pdf: https://docs.envisioniot.com/projects/app-development/downloads/pdf/latest/
+.. _htmlzip: https://docs.envisioniot.com/projects/app-development/downloads/htmlzip/latest/
+.. _epub: https://docs.envisioniot.com/projects/app-development/downloads/epub/latest/

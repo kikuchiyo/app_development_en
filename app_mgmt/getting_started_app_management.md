@@ -1,5 +1,6 @@
 # Getting started with application management
-How to get started with application management with EnOS™.
+
+This topic gets your started with application management on EnOS.
 
 ## Before you begin
 
@@ -9,7 +10,7 @@ If you don't have devices to connect, you can use the device simulator that EnOS
 
 ## Step 1: Register an application and test authorization
 
-EnOS™ provides developers with a complete application development process to help them access data through public interfaces and perform application development offline.
+EnOS™ provides a complete application development process to help you access the data through EnOS APIs and perform application development offline.
 
 Click **Application Management** from the left navigation panel and click **Register App**, fill in the application information and save. The application is successfully registered.
 
@@ -25,15 +26,15 @@ After an application is purchased by a client, asset authorization can then be p
 
 1. Click **Access Control > Application Authorization** to check the overview of asset authorization for all applications.
 
-2. Click the application to Authorize for accessing assets and data.
+2. Click the application to authorize for accessing assets and data.
 
 ## Step 4: Test authorization
 
-After an application is purchased and the asset authorization is completed, you can test authorization through the API test tool. This tool is an EnOS™ API test tool that can verify whether the authorization is correct or not when client data is obtained through the EnOS™ API.
+After an application is purchased and the asset authorization is completed, you can test authorization through **API Service > API Test**. This tool can verify whether the authorization is successful or not when client data is obtained through the EnOS™ API.
 
 ## Step 5: Develop applications with EnOS™ SDK offline
 
-EnOS™ provides EnOS™ APIs and supporting Java SDKs to help developers quickly develop applications offline.
+EnOS™ provides EnOS™ APIs and supporting Java SDKs to help you quickly develop applications offline.
 
 1. Create a project and import EnOS™ SDK.
 
@@ -41,7 +42,9 @@ EnOS™ provides EnOS™ APIs and supporting Java SDKs to help developers quickl
 
 2. Obtain the latest device data
 
-   After importing the SDK, code can be written. This course takes an example of getting the latest data interface for a device. The example code is as follows:
+   After importing the SDK, you can start programming with the SDK APIs.
+
+   The following code sample shows how to obtain the latest data of a device:
 
    ```java
    import com.envision.eeop.api.EnvisionClient;

@@ -1,30 +1,25 @@
-# Application Management
+# Managing applications
 EnOS™ provides developers with the ability to create applications, delete applications, manage applications within organizations and purchased applications, so that developers can manage applications better.
 
-## Application creation
-Click New application to fill in the application information and create an application
-- Define whether an application belongs to Mobile or Web
-- Upload application icon
-- Register resources such as menus、views of the application so that you can customerize the application for different customers.
+## Registering an application
 
+Click **Register App** and fill in the application information:
 
-## Application within organizations
-In the application management page, go to the TAB for organization applications to view all applications within the organization. At this page,you can easily:
-- Check the application Key conveniently
-- Check the application Secret conveniently
+- Define whether the application is a mobile or web app
+- Upload the application icon
+- Register resources such as menus, views of the application so that you can assign different permissions to the application for different customers.
 
-## Application purchase
-EnOS™ provides purchase services for application developers to help them achieve application sharing and reduce duplication of labor. A third-party client may purchase an application and read data and enjoy services through the application.
+## Purchasing an application
 
-- Developers can purchase the applications created by themselves independently.
-- When you wants to purchase an application developed by organization B, organization B needs to submit a sale applicationlication to the EnOS™ system, and the system administrator will allocates the relevant application of organization B to you and you can see the application on the application management page and the tab is "purchased apps".
+Application developer can sell or purchase applications through EnOS™. This facilitates application sharing and reduces repetitive work on developing similar applications.
+
+- Application developers can purchase the applications of their own.
+- When client A wants to purchase an application developed by client B, client B submits a sale request to EnOS after negotiating the sales deal with client A, and the EnOS system administrator will allocate the relevant application of client B to client A. Client A can then see the application in the **Purchased App**  tab.
 
 ## Application asset authorization
-When you purchases or develops an application, you can authorize your own assets to the application. The steps are described as follows:
-- Go to access control
-- Click the application authorization TAB
-- Select the application you want to authorize in the application list, edit the asset authorization, click **Save** to complete asset authorization for the application.
 
+When you purchases or develops an application, you can authorize your resources to the application. The steps are described as follows:
 
-## Application Deletion
-Click an application you created aand access the details, then you can delete the application.
+1. Click **IAM > App Authorization**.
+2. Locate the application to authorize assets for and click the **Asset Authorization** icon "![](media/app_authorize_icon.png)".
+3. Select the assets to authorize for the application and click **Authorize**.
