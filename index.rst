@@ -14,7 +14,6 @@ Application development
 
    app_dev_overview
    enos_apis_overview
-   rest_api_interpretation
    sdk_overview
 
 .. toctree::
@@ -29,6 +28,7 @@ Application development
    :caption: How-to's
 
    managing_apps
+   call_enos_api
    generating_signature
 
 .. toctree::

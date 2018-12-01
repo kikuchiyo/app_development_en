@@ -1,4 +1,4 @@
-# Generating signature
+# Generating signature for API requests
 
 EnOS supports SHA-1 signature to help avoid malicious tempering or usurp during API calling. An API request must carry a signature to be validated by the server side to be able to call an API. For Java SDKs, the signature algorithm is pre-built. If you use other programming language to call the APIs, you need to generate your own signature based on the application key, application secret, and request parameters.
 

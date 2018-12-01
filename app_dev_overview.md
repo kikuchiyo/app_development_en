@@ -1,8 +1,8 @@
-# Application management overview
+# Application development overview
 
-Through application management, you can register applications, manage your purchased and self-developed applications, and assign _application resources_. By registering an application, you'll obtain authorization to call APIs, and so on.
+The process of application development on EnOS portal may include registering applications, managing applications (purchased and self-developed), assigning application resources to users, and using EnOS SDKs to develop applications offline.
 
-The application management function provides the following benefits:
+The application management function of EnOS portal provides the following benefits:
 
 **Ready-to-use**
 
@@ -32,13 +32,15 @@ The *secretKey* (application secret) is the secret to the application key. When 
 
 **Application resources**
 
-Application resources indicate the menus, operations, other graphic interface controls and elements in an application.
+Application resources indicate the menus, operations, data, and graphic interface controls and elements in an application.
 
-EnOS™ allows application developers to manage the access permissions to the application resources. Developers can register application resources as controlled resources. When the application is sold to a client, the application developer can assign appropriate permissions to the controlled resources for the client.
+EnOS™ allows application developers to manage the access permissions to the application resources. Developers can register application resources as controlled resources. When the application is shared with a client, the application developer can assign appropriate permissions to the controlled resources for the client using the EnOS Application Framework.
 
 ## Personas
 
 The following personas are involved in application management:
+- **System administrator**: a party who manages organizations, users, and resources on the EnOS platform.
+- **Organization administrator**: a party who manages users and resources of an organization.
 - **Application developer**: a party who develops an application through calling EnOS APIs.
 - **Application provider**: a party who provisions an application on EnOS to be consumed by other parties. An application developer can be an application provider.
 - **Application user/consumer**: who consumes the application that is provided by the application provider.

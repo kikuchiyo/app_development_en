@@ -1,6 +1,6 @@
 # Getting started with EnOS REST APIs
 
-This article aims to help you get started with calling EnOS API to interact with your data in the EnOS™ Cloud by, such as logging in and querying the device properties, real-time and historical data. With EnOS API, you can develop your own applications based on your resources in the EnOS Cloud.
+This topic aims to help you get started with calling EnOS API to interact with your data in the EnOS™ Cloud by, such as logging in and querying the device properties, real-time and historical data. With EnOS API, you can develop your own applications based on your resources in the EnOS Cloud.
 
 The sections below describe the major steps that you can follow to call EnOS REST APIs:
 
@@ -13,9 +13,9 @@ The sections below describe the major steps that you can follow to call EnOS RES
 
 Invoking APIs requires three types of parameters:
 
-- API: The name of the API that you are about to invoke and the request paramters as required by the API.
+- API: Name of the API that you are about to invoke and the request paramters as required by the API.
 - Application identity: As the identity when you invoke an API, `accessKey` and `secretKey` are used to verify your identity.
-- Token: to access the resources in the EnOS Cloud, an API requester must present the username to be authenticated and access the authorized resources. You can obtain the token by invoking the `login` API.
+- Signature: Authentication method for API requests. It is generated based on the application key, application secret, and request parameters with an algorithm.
 
 ## Before you start
 
@@ -49,7 +49,7 @@ To access the API documentation, go to **EnOS API > API Documents**. Summary of 
 
 ## Step 3: Calling EnOS API
 
- Wrap up API service URL, parameters, and signatures manually to assemble HTTP requests to call an API. For detailed instructions, see [REST API interpretation](rest_api_interpretation).
+ Wrap up API service URL, parameters, and signatures manually to assemble HTTP requests to call an API. For detailed instructions, see [Calling EnOS REST APIs](call_enos_api).
 
 ## Step 4: Testing and deploying the application
 

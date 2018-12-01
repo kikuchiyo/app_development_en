@@ -29,33 +29,19 @@ To use EnOS API SDK, a service account (`accessKey` and `secretKey`) is required
   	<dependency>
       <groupId>com.envisioniot</groupId>
       <artifactId>enos-api-sdk</artifactId>
-      <version>0.0.2</version>
+      <version>2.1.0</version>
       <!--You might need to change the version number as you need.-->
       </dependency>
   ```
 
 ### Build SDK from source code and import into IDE
 
-1. Get a copy of the **EnOS API SDK for Java** from the master branch of the GitHub repository: https://github.com/EnvisionIot/enos-api-java-sdk
+1. Get a copy of the **EnOS API SDK for Java** from the master branch of the GitHub repository:
   ```
-  git clone https://github.com/EnvisionIot/enos-api-java-sdk.git
+  git clone https://github.com/EnvisionIot/enos-api-sdk-java.git
   ```
 2. After you have obtained a copy of the source, you can build the SDK for Java.
 
-3. Import the JAR package into your integrated development envionrment.
-
-    - For Eclipse, take the following steps:
-
-      1. Download the *enos-api-v2-x.x.x.jar* file and copy it to your project folder.
-      2. Open your project in Eclipse, right-click the project, and select **Properties**.
-      3. In the pop-up window, select **Java Build Path** > **Libraries** > **Add JARs** to import the downloaded JAR file.
-      4. Click **Apply**.
-
-    - For IntelliJ, take the following steps:
-
-      1. Download the *enos-api-v2-x.x.x.jar* file and copy it to your project folder.
-      2. Open your project in IntelliJ, and select **File** > **Project Structure** from the menu bar.
-      3. Click **Apply** > **OK**.
 
 ## Using EnOS API SDK
 Take the following major steps to use EnOS API SDK to call an API.
@@ -84,8 +70,10 @@ Take the following major steps to use EnOS API SDK to call an API.
    String status = response.getStatus()
    ```
 
-**Code sample**
-The following sample code is for creating a product.
+### Code sample
+
+The following sample code is for the `createProduct` API (creating a product).
+
 ```java
 import com.envisioniot.enos.enosapi.api.request.connectservice.CreateProductRequest;
 import com.envisioniot.enos.enosapi.api.resource.connectservice.Product;
