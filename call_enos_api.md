@@ -2,7 +2,7 @@
 
 This topic describes how to call EnOS REST APIs by assembling API request URL with parameters, generating signature, sending HTTP request, getting HTTP response, and parsing JSON results.
 
-## Components of request
+## Components of Request
 
 Assembling HTTP requests to call APIs is the process of the building REST API URL manually or with API calling tools and then calling EnOS APIs through the URL.
 
@@ -23,7 +23,7 @@ In the following sample request URL, the `api-path` segment is `/connectService/
 GET https://enos-api-cn1.envisioniot.com/connectService/products/{productKey}?accessKey={}&requestTimestamp={}&sign={}&orgId={}
 ```
 
-### Common request parameters
+### Common Request Parameters
 
 The following table lists the common request parameters required by each EnOS API.
 
@@ -66,24 +66,24 @@ The following table lists the common request parameters required by each EnOS AP
   </tr>
 </table>
 
-### Business parameters
+### Business Parameters
 
 In addition to the common parameters, the business parameters for the API requests are also required in the request URL. The business parameters for each API can be found through **EnOS API** > **API Documents** in the EnOS Console.
 
-### Request methods
+### Request Methods
 
 EnOS API calling methods, including `GET`, `POST`, `PUT`, and `DELETE`. The calling method of each API can be found in the API reference documentation. 
 
 
-### Request body
+### Request Body
 
 `content-type`: The content type of the message body, which defines the data type of the API request body. For example, `application/json;charset=UTF-8`.
 
-## Components of response
+## Components of Response
 
 The following table lists the common response parameters of each API request. 
 
-### Common response parameters
+### Common Response Parameters
 
 <table>
 <tr>
@@ -113,7 +113,7 @@ The following table lists the common response parameters of each API request.
 </tr>
 </table>
 
-### Status code
+### Status Code
 
 HTTP status code, ranging from 2xx success codes to 4xx or 5xx error codes, that indicates the status of the API invocation.
 
@@ -196,11 +196,11 @@ HTTP status code, ranging from 2xx success codes to 4xx or 5xx error codes, that
 </tr>
 </table>
 
-### Response message body
+### Response Message Body
 
 You can find the response message body interpretation for each API in the API reference documentation in the EnOS Console.
 
-## Sample HTTP request
+## Sample HTTP Request
 
 Using the `getProduct` API as an example, take the following steps to assemble the HTTP request.
 

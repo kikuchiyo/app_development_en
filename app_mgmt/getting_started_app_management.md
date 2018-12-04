@@ -1,26 +1,26 @@
-# Getting started with application management
+# Getting Started with Application Management
 
 This topic gets you started with application management on EnOS.
 
-## Before you begin
+## Before You Begin
 
 Use the EnOS™ device connection service to connect your asset data into EnOS™ cloud. For more information, see [Device connection](https://docs.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html).
 
 If you do not have devices to connect, you can use the device simulator that EnOS™ provides to simulate data transmission and build your application based on the simulated data. For more information, see [Simulating devices](simulating_device).
 
-## Step 1: Register an application and test authorization
+## Step 1: Register an Application and Test Authorization
 
 EnOS™ provides a complete application development process to help you access the data through EnOS APIs and perform application development offline.
 
 Click **Application Management** from the left navigation panel and click **New App**, fill in the application information and save. The application is successfully registered.
 
-## Step 2: Purchase the application
+## Step 2: Purchase the Application
 
 After an application is registered, the application exists on EnOS™ cloud and is available for purchase. You can access the data only after purchasing the application.
 
 Currently, the purchase action is done by the EnOS™ system administrator. But if you are the application owner, you can purchase the application registered by yourself.
 
-## Step 3: Authorize application to access assets and data
+## Step 3: Authorize Application to Access Assets and Data
 
 After an application is purchased by a client, asset authorization can then be performed for the application. The application can access the asset data of the client only when the application asset authorization is completed. The major procedure is as follows:
 
@@ -28,11 +28,11 @@ After an application is purchased by a client, asset authorization can then be p
 
 2. Click the application to authorize for accessing assets and data.
 
-## Step 4: Test authorization
+## Step 4: Test Authorization
 
 After an application is purchased and the asset authorization is completed, you can test authorization through **API Service > API Test**. This tool can verify whether the authorization is successful or not when client data is obtained through the EnOS™ API.
 
-## Step 5: Develop applications with EnOS™ SDK offline
+## Step 5: Develop Applications with EnOS™ SDK Offline
 
 EnOS™ provides EnOS™ APIs and supporting Java SDKs to help you quickly develop applications offline.
 

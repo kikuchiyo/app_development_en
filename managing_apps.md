@@ -1,7 +1,7 @@
-# Managing applications
+# Managing Applications
 EnOS™ provides developers with the ability to create applications, delete applications, purchase applications, and manage application resources of the organization.
 
-## Registering an application
+## Registering an Application
 
 On the **App Management** page of EnOS Console, click **Register App** and fill in the application information.
 
@@ -12,7 +12,7 @@ On the **App Management** page of EnOS Console, click **Register App** and fill 
 
 After the application is created, it is listed under the **Apps of Org** tab. Click the application name to view detailed information (like the secretKey) of the application. You can also register resources such as menus, views, and data of the application so that you can assign different permissions to the application for different users.
 
-## Managing application resources
+## Managing Application Resources
 
 When you develop an application, the related resources in your organization are authorized for the application by default. To manage and allocate application resources to different users, take the following steps.
 
@@ -23,7 +23,7 @@ When you develop an application, the related resources in your organization are 
 
 The created resources can be assigned to application users under the **Client Management** tab. 
 
-## Managing application users
+## Managing Application Users
 
 When clients request to purchase your application through EnOS, you will need to process the requests and manage resource authorization to your clients on the **App Details** page. 
 
@@ -31,7 +31,7 @@ When clients request to purchase your application through EnOS, you will need to
 2. In the **Approval Management** section, approve or reject the purchase requests as appropriate.
 3. If a client request is approved, assign application resources to the client in the **Authorization Management** section. Assigned resources can be managed in the **Authorized resources** table.
 
-## Purchasing an application
+## Purchasing an Application
 
 Application developers can sell or purchase applications through EnOS™. This facilitates application sharing and reduces repetitive work on developing similar applications.
 

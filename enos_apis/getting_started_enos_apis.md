@@ -1,4 +1,4 @@
-# Getting started with EnOS™ APIs
+# Getting Started with EnOS™ APIs
 
 This topic will quickly get you started with invoking the EnOS™ APIs that are opened by the EnOS™ System. The basic flow is as follows:
 
@@ -6,13 +6,13 @@ This topic will quickly get you started with invoking the EnOS™ APIs that are 
 2. Register an application on EnOS to get the application key and secret.
 3. Call the API by presenting the application key and secret, and providing other required request parameters as instructed in the API documentation.
 
-## Step 1: Obtain the EnOS™ API documentation
+## Step 1: Obtain the EnOS™ API Documentation
 
 1. Click **API Servics > EnOS API** from the left navigation panel to show the list of EnOS APIs.
 
 2. Search the API by name or locate the API from the list directly.
 
-## Step 2: Register an application
+## Step 2: Register an Application
 
 To request the EnOS APIs, you need to register an application in the EnOS cloud and obtain the application key and secret that are assigned by EnOS. The application is the account to use for accessing EnOS APIs. When you invoke an API, you need to present the application key and secret to be authenticated by EnOS.
 

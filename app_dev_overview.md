@@ -1,4 +1,4 @@
-# Application development overview
+# Application Development Overview
 
 The process of application development on EnOS portal may include registering applications, managing applications (purchased and self-developed), assigning application resources to users, and using EnOS SDKs to develop applications offline.
 
