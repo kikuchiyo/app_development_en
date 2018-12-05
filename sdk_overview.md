@@ -1,22 +1,48 @@
 # EnOS SDK Overview
 
-EnOS provides SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application management. This section provides and overview of EnOS SDKs. 
+EnOS provides SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application management. This section provides and overview of EnOS SDKs.
 
-## EnOS Device SDK for Java
+## EnOS Device SDKs
 
-The **EnOS IoT MQTT SDK** for Java provides various device connection and management interfaces, such as device registration, device data ingestion, and device control, to help you send device telemetries to the EnOS Cloud and receive data or commands from the cloud.
+The **EnOS Device SDKs** provide various device connection and management interfaces, such as device registration, device data ingestion, and device control, to help you send device telemetries to the EnOS Cloud and receive data or commands from the cloud.
+
+### EnOS Device SDK for MQTT for Java
 
 - [Include dependency in Maven project](https://mvnrepository.com/artifact/com.envisioniot/enos-mqtt/2.1.0)
 - [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-mqtt-sdk-java)
 
-## EnOS Service SDK for Java
+### EnOS Device SDK for MQTT for Python (Preview Edition)
 
-The **EnOS IoT Service SDK** for Java supports application development through calling EnOS API services (connect service, model service, asset service, data service, and file service). 
+- Install from PIP
 
-- [Include dependency in Maven project](https://mvnrepository.com/artifact/com.envisioniot/enos-api/2.1.0) 
-- [Obtain Source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-java)
+  ```
+  pip install enos-mqtt-sdk-python
+  ```
 
-- View [API Reference](gettingstarted_api)
+- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-mqtt-sdk-java)
+
+## EnOS Service SDKs
+
+The **EnOS Service SDKs** support application development through calling EnOS REST API services (connect service, model service, asset service, data service, and file service).
+
+### EnOS Service SDK for Java
+
+- [Include dependency in Maven project](https://mvnrepository.com/artifact/com.envisioniot/enos-api/2.1.0)
+- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-java)
+
+- View [API Reference](https://docs.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
+
+### EnOS Service SDK for Python (Preview Edition)
+
+- Install from PIP
+
+  ```
+  pip install enos-api-sdk-python
+  ```
+
+- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-java)
+
+- View [API Reference](https://docs.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
 
 ## EnOS Appframework Mars
 
@@ -26,5 +52,4 @@ The EnOS Appframework Mars SDK provides a framework and a set of easy-to-use API
 
 ## Related Links
 
-- [Getting started with EnOS Java SDKs](gettingstarted_sdk)
-
+- [Getting Started with EnOS SDKs](gettingstarted_sdk)

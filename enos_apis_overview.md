@@ -18,8 +18,8 @@ EnOS mainly provides the following categories of APIs:
 
 EnOS REST APIs can be called through HTTP protocol. You can choose one of the following options to call EnOS APIs:
 
-- **Use EnOS API SDK offline**: Official SDK provided by EnOS, supporting request URL assembling, signature generation, response parsing, and APP performance optimization. You are recommended to use EnOS API SDK. For detailed instructions, see [Getting Started with EnOS Java SDKs](gettingstarted_sdk).
-- **Use REST APIs through online HTTP request**: Wrap up API service URL, parameters, and signatures manually to assemble HTTP requests to call an API. For detailed instructions, see [Calling EnOS REST API](call_enos_api).
+- **Use EnOS API SDK offline**: Official SDK provided by EnOS, supporting request URL assembling, signature generation, response parsing, and APP performance optimization. You are recommended to use EnOS API SDK. For detailed instructions, see [Getting Started with EnOS SDKs](gettingstarted_sdk).
+- **Use REST APIs through online HTTP request**: Wrap up API service URL, parameters, and signatures manually to assemble HTTP requests to call an API. For detailed instructions, see [Calling EnOS REST APIs](call_enos_api).
 
 The figure below shows the process of calling EnOS API:
 
@@ -28,5 +28,4 @@ The figure below shows the process of calling EnOS API:
 ## Related Links
 
 - [Getting Started with EnOS REST APIs](gettingstarted_api)
-- [Getting Started with EnOS Java SDKs](gettingstarted_sdk)
-
+- [Getting Started with EnOS SDKs](gettingstarted_sdk)
