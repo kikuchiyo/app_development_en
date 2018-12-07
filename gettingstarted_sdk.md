@@ -1,4 +1,4 @@
-# Getting Started With EnOS SDKs
+# Getting Started with EnOS SDKs
 
 EnOS provides SDKs to support offline application development. The EnOS SDKs assembles API request URL, generates signature, parses response, and optimizes application performance.
 
