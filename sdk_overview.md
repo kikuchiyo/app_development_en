@@ -1,6 +1,6 @@
 # EnOS SDK Overview
 
-EnOS provides SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application management. This section provides and overview of EnOS SDKs.
+EnOS provides official SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application management. This topic provides and overview of EnOS SDKs.
 
 ## EnOS Device SDKs
 
@@ -19,7 +19,7 @@ The **EnOS Device SDKs** provide various device connection and management interf
   pip install enos-mqtt-sdk-python
   ```
 
-- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-mqtt-sdk-java)
+- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-mqtt-sdk-python)
 
 ## EnOS Service SDKs
 
@@ -40,7 +40,7 @@ The **EnOS Service SDKs** support application development through calling EnOS R
   pip install enos-api-sdk-python
   ```
 
-- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-java)
+- [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-python)
 
 - View [API Reference](https://docs.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
 
