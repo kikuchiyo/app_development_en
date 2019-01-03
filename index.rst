@@ -6,7 +6,7 @@ Application development
    :hidden:
    :caption: Back to
 
-   EnOS Fundamental <https://docs.envisioniot.com/docs/enos/en/latest/overview/enos_introduction.html>
+   EnOS™ Fundamental <https://docs.envisioniot.com/docs/enos/en/latest/overview/enos_introduction.html>
 
 .. toctree::
    :maxdepth: 1
@@ -35,7 +35,7 @@ Application development
    :maxdepth: 1
    :caption: Related services
 
-   Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html>
+   Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/device_management_overview.html>
 
 
 Downloads

@@ -27,14 +27,15 @@ You can obtain the EnOS SDKs through the following methods:
 
 1. Navigate to http://search.maven.org, search for **com.envisioniot.enos** and take note of the latest version number (or the version number of whichever version of the sdk you want to use).
 2. In your main `pom.xml` file, add the SDK for Java as a dependency (take the EnOS Service SDK for Java as example):
-  ```java
-  	<dependency>
-      <groupId>com.envisioniot</groupId>
-      <artifactId>enos-api-sdk</artifactId>
-      <version>2.1.0</version>
-      <!--You might need to change the version number as you need.-->
-      </dependency>
-  ```
+   ```
+   java
+   	<dependency>
+       <groupId>com.envisioniot</groupId>
+       <artifactId>enos-api-sdk</artifactId>
+       <version>2.1.0</version>
+       <!--You might need to change the version number as you need.-->
+     </dependency>
+   ```
 
 ### Install from PIP
 
@@ -46,11 +47,11 @@ pip install enos-api-sdk-python
 
 ### Building from Source Code
 
-1. Get a copy of the SDKs from the master branch of the corresponding GitHub repository (take the EnOS Service SDK for Java as example):
-  ```
-  git clone https://github.com/EnvisionIot/enos-api-sdk-java.git
-  ```
-2. After you have obtained a copy of the source, you can build the SDK for Java.
+Get a copy of the SDKs from the master branch of the corresponding GitHub repository (take the EnOS Service SDK for Java as example):
+```
+git clone https://github.com/EnvisionIot/enos-api-sdk-java.git
+```
+After you have obtained a copy of the source, you can install the SDK.
 
 
 ## Example. Using EnOS Service SDK for Java
