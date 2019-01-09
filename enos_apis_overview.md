@@ -11,7 +11,8 @@ EnOS mainly provides the following categories of APIs:
 - **Connect Service**: Device connection and management services, including registration, acquisition, modification, and deletion of device assets.
 - **Model Service**: Organization thing model information services.
 - **Asset Service**: Asset and asset tree management services.
-- **Data Service**: Asset measurepoint data upload service.
+- **Data Service**: Asset measurepoint data ingestion services.
+- **Event Service**: Asset alerts management services.
 - **Common File Service**：File management services, including file upload, download, storage and delete.
 
 ## Approaches to Call EnOS APIs
@@ -23,7 +24,8 @@ EnOS REST APIs can be called through HTTP protocol. You can choose one of the fo
 
 The figure below shows the process of calling EnOS API:
 
-![](media/api_calling_process.png)
+.. image:: media/api_calling_process.png
+   :width: 600px
 
 ## Related Links
 

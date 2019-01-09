@@ -5,8 +5,11 @@ This topic aims to help you get started with calling EnOS API to interact with y
 The sections below describe the major steps that you can follow to call EnOS REST APIs:
 
 1. Register an application in the EnOS Console
+
 2. Access the API documentation
+
 3. Call the EnOS API
+
 4. Test and deploy the application
 
 **Three elements for invoking APIs**
@@ -28,7 +31,9 @@ To request the EnOS APIs, you need to register an application in the EnOS cloud 
 An application must have the permission to invoke an API, and any application currently registered on EnOS™ has the permission to invoke EnOS APIs. The resource authorization, that is which devices or data you can access through the API, is enforced through IAM at the account level.
 
 1. In the EnOS Console, click **APP Management** from the left navigation.
+
 2. Click the **Register App** button.
+
 3. Provide application name and description, and select a category and type for the application.
 
 After the application is registered, EnOS assigns an application key and secret for the application, which will be used for authorization and signature validation when calling EnOS APIs.
@@ -37,15 +42,13 @@ After the application is registered, EnOS assigns an application key and secret 
 
 To access the API documentation, go to **EnOS API > API Documents**. Summary of APIs is displayed in tables by API service categories. Click the **More** icon for each API to view details, including API function, calling method, requesting URL, parameter description, calling sample, and response sample. See the following screen capture.
 
-![](media/List_of_APIs.png)
+.. image:: media/List_of_APIs.png
+   :alt: Figure 1. Accessing EnOS API documentation from EnOS Console
+   :width: 600px
 
-*Figure 1. Accessing EnOS API documentation from EnOS Console*
-
-
-
-![](media/Example_of_API_details.png)
-
-*Figure 2. Example of API documentation*
+.. image:: media/Example_of_API_details.png
+   :alt: Figure 2. Example of API documentation
+   :width: 600px
 
 ## Step 3: Calling EnOS API
 

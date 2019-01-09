@@ -16,6 +16,7 @@ The system environment requirements for EnOS SDKs are as follows:
 
 - For Java, install Java JDK SE 8 and Maven 3 (recommended).
 - For Python, intall Python 2.7.10 or above version, and `pip` is required.
+- For C, install CMake (downloading CMake from <https://cmake.org/>).
 
 You can obtain the EnOS SDKs through the following methods:
 * For Java, include the project as a dependency in your Maven project. For Python, install SDKs through PIP.
@@ -26,7 +27,9 @@ You can obtain the EnOS SDKs through the following methods:
   _This is the recommended method of including the EnOS Java SDKs in your project._
 
 1. Navigate to http://search.maven.org, search for **com.envisioniot.enos** and take note of the latest version number (or the version number of whichever version of the sdk you want to use).
+
 2. In your main `pom.xml` file, add the SDK for Java as a dependency (take the EnOS Service SDK for Java as example):
+
    ```
    java
    	<dependency>
@@ -34,7 +37,7 @@ You can obtain the EnOS SDKs through the following methods:
        <artifactId>enos-api-sdk</artifactId>
        <version>2.1.0</version>
        <!--You might need to change the version number as you need.-->
-     </dependency>
+       </dependency>
    ```
 
 ### Install from PIP

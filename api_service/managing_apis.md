@@ -66,7 +66,8 @@ Path is the request path for your API service at your backend server, it is the 
 - Backend timeout  
 
 It means that when an API request arrives API Service, the responding time taken by API Service to call the API backend service. It starts from the backend of API Service request to the point that API Service receives the return result from the backend. It should not be longer than 30 seconds. API Service would give up requesting backend service for values over 30 seconds, and return the corresponding error to user.
-Note: All the input parameters, including, dynamic parameters in Path, Headers parameter, Query parameter, Body parameter (non-binary), constant parameter, system parameter, the parameter name of which should be globally unique. That means, it is not allowed to have parameters in Headers and Query with the same name.
+
+.. note:: All the input parameters, including, dynamic parameters in Path, Headers parameter, Query parameter, Body parameter (non-binary), constant parameter, system parameter, the parameter name of which should be globally unique. That means, it is not allowed to have parameters in Headers and Query with the same name.
 
 ### Part 4: Define return result
 You need to input return ContentType, return result example, example of failed return result and definition of error code, which will be generated as an API document and display in the API market.

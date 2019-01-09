@@ -27,44 +27,33 @@ GET https://enos-api-cn1.envisioniot.com/connectService/products/{productKey}?ac
 
 The following table lists the common request parameters required by each EnOS API.
 
-<table>
-  <tr>
-    <td>Parameter</td>
-    <td>Data type</td>
-    <td>Required</td>
-    <td>Description</td>
-  </tr> 
-  <tr>
-    <td>Content-Type</td>
-    <td>String</td>
-    <td>Yes</td>
-    <td>Data uploading method. Generally, set its value as "application/json;charset=UTF-8"; For uploading files or forms, set its value as "multipart/form-data;charset=UTF-8".</td>
-  </tr>  
-  <tr>
-    <td>accessKey</td>
-    <td>String</td>
-    <td>Yes</td>
-    <td>APP Key assigned to your application after it is created on EnOS Developer Center.</td>
-  </tr>
-  <tr>
-    <td>secretKey</td>
-    <td>String</td>
-    <td>Yes</td>
-    <td>APP Secret generated for your application after it is created on EnOS Developer Center.</td>
-  </tr>
-  <tr>
-    <td>requestTimestamp</td>
-    <td>String</td>
-    <td>Yes</td>
-    <td>Time when the request is sent (Unix timestamp) from the client. The value of the timestamp is the total UTC milliseconds starting from 00:00:00 of 1970-01-01, for example1536560363020. The server accepts a time difference of no more than 30 minutes.</td>
-  </tr>
-  <tr>
-    <td>sign</td>
-    <td>String</td>
-    <td>Yes</td>
-    <td>The API request signature that is generated based on the accessKey, secretKey, timestamp, and API request parameters. Signature can prevent API requests from malicious tempering. The API gateway will verify the signature, and rejects a request when its signature is invalid. Currently, SHA-1 algorithm is used for generating signature. For more information, see Generating signature.</td>
-  </tr>
-</table>
+.. list-table::
+   :widths: 20 20 10 50
+
+   * - Parameter
+     - Data type
+     - Required
+     - Description
+   * - Content-Type
+     - String
+     - Yes
+     - Data uploading method. Generally, set its value as "application/json;charset=UTF-8"; For uploading files or forms, set its value as "multipart/form-data;charset=UTF-8".
+   * - accessKey
+     - String
+     - Yes
+     - APP Key assigned to your application after it is created on EnOS Developer Center.
+   * - secretKey
+     - String
+     - Yes
+     - APP Secret generated for your application after it is created on EnOS Developer Center.
+   * - requestTimestamp
+     - String
+     - Yes
+     - Time when the request is sent (Unix timestamp) from the client. The value of the timestamp is the total UTC milliseconds starting from 00:00:00 of 1970-01-01, for example1536560363020. The server accepts a time difference of no more than 30 minutes.
+   * - sign
+     - String
+     - Yes
+     - The API request signature that is generated based on the accessKey, secretKey, timestamp, and API request parameters. Signature can prevent API requests from malicious tempering. The API gateway will verify the signature, and rejects a request when its signature is invalid. Currently, SHA-1 algorithm is used for generating signature. For more information, see Generating signature.
 
 ### Business Parameters
 
@@ -72,7 +61,7 @@ In addition to the common parameters, the business parameters for the API reques
 
 ### Request Methods
 
-EnOS API calling methods, including `GET`, `POST`, `PUT`, and `DELETE`. The calling method of each API can be found in the API reference documentation. 
+EnOS API calling methods, including `GET`, `POST`, `PUT`, and `DELETE`. The calling method of each API can be found in the API reference documentation.
 
 
 ### Request Body
@@ -81,120 +70,77 @@ EnOS API calling methods, including `GET`, `POST`, `PUT`, and `DELETE`. The call
 
 ## Components of Response
 
-The following table lists the common response parameters of each API request. 
+The following table lists the common response parameters of each API request.
 
 ### Common Response Parameters
 
-<table>
-<tr>
-<th>Field</th>
-<th>Data type</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>requestId</td>
-<td>String</td>
-<td>API request ID</td>
-</tr>
-<tr>
-<td>status</td>
-<td>Int</td>
-<td>Status code, see the following section for details.</td>
-</tr>
-<tr>
-<td>msg</td>
-<td>String</td>
-<td>Message</td>
-</tr>
-<tr>
-<td>submsg</td>
-<td>String</td>
-<td>Detailed description of the message </td>
-</tr>
-</table>
+.. list-table::
+   :header-rows: 1
+   :widths: 25 25 50
+
+   * - Field
+     - Data type
+     - Description
+   * - requestId
+     - String
+     - API request ID
+   * - status
+     - Int
+     - Status code, see the following section for details.
+   * - msg
+     - String
+     - Message
+   * - submsg
+     - String
+     - Detailed description of the message
+
 
 ### Status Code
 
 HTTP status code, ranging from 2xx success codes to 4xx or 5xx error codes, that indicates the status of the API invocation.
 
-<table>
-<tr>
-<th>Status code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="code">0</td>
-<td>Request success</td>
-</tr>
-<tr>
-<td class="code">400</td>
-<td>Invalid parameter</td>
-</tr>
-<tr>
-<td class="code">401</td>
-<td>Authentication failed, possibly caused by unmatch of accessKey and secretKey.</td>
-</tr>
-<tr>
-<td class="code">403</td>
-<td>No permission</td>
-</tr>
-<tr>
-<td class="code">404</td>
-<td>Resource not found</td>
-</tr>
-<tr>
-<td class="code">405</td>
-<td>Method not supported</td>
-</tr>
-<tr>
-<td class="code">409</td>
-<td>Resource already exists</td>
-</tr>
-<tr>
-<td class="code">414</td>
-<td>Request body size exceeds limit</td>
-</tr>
-<tr>
-<td class="code">415</td>
-<td>Request parameter value exceeds limit</td>
-</tr>
-<tr>
-<td class="code">429</td>
-<td>Number of requests exceed limit</td>
-</tr>
-<tr>
-<td class="code">497</td>
-<td>Timestamp or signature verification failed</td>
-</tr>
-<tr>
-<td class="code">498</td>
-<td>No access to resources or API</td>
-</tr>
-<tr>
-<td class="code">499</td>
-<td>Client error</td>
-</tr>
-<tr>
-<td class="code">500</td>
-<td>Internal service error</td>
-</tr>
-<tr>
-<td class="code">501</td>
-<td>API not supported</td>
-</tr>
-<tr>
-<td class="code">503</td>
-<td>API service not available</td>
-</tr>
-<tr>
-<td class="code">504</td>
-<td>Request timeout</td>
-</tr>
-<tr>
-<td class="code">6xx</td>
-<td>Third-party service error codes</td>
-</tr>
-</table>
+.. list-table::
+   :header-rows: 1
+
+   * - Status code
+     - Description
+   * - 0
+     - Request success
+   * - 400
+     - Invalid parameter
+   * - 401
+     - Authentication failed, possibly caused by unmatch of accessKey and secretKey.
+   * - 403
+     - No permission
+   * - 404
+     - Resource not found
+   * - 405
+     - Method not supported
+   * - 409
+     - Resource already exists
+   * - 414
+     - Request body size exceeds limit
+   * - 415
+     - Request parameter value exceeds limit
+   * - 429
+     - Number of requests exceed limit
+   * - 497
+     - Timestamp or signature verification failed
+   * - 498
+     - No access to resources or API
+   * - 499
+     - Client error
+   * - 500
+     - Internal service error
+   * - 501
+     - API not supported
+   * - 503
+     - API service not available
+   * - 504
+     - Request timeout
+   * - 6xx
+     - Third-party service error codes
+
 
 ### Response Message Body
 
@@ -250,7 +196,7 @@ Encode all parameters and values (including the sign parameter) in UTF-8 format 
 http://xxx.envisioniot.com/enosapi/connectService/products/12345?orgId=123&productKey=12345&requestTimestamp=1536560363020&accessKey=accessKeyExample&secretKey=secretKeyExample&sign=4A6936C442CC34C5C42B9E06D97F2FA268B7E52F
 ```
 
-**Notes：**
+.. note:: - Both the request parameters and response data are in UTF-8 format. Parameters and values must be URL-encoded. If the content type of the request is application/x-www-form-urlencoded, then parameters in the request body must also be URL-encoded. If the content type of the request is multipart/form-data, then parameter of each form field does not need to be encoded, but the charset of each form field should be in UTF-8 format. If the content type of the request is application/json, then the HTTP body should be included in signature generation but does not need to be URL encoded.
+         - the signature generation process applies to calling apis without the official api sdk. if you use the official api sdk, the sdk will generate the signature automatically.
 
-- Both the request parameters and response data are in UTF-8 format. Parameters and values must be URL-encoded. If the content type of the request is application/x-www-form-urlencoded, then parameters in the request body must also be URL-encoded. If the content type of the request is multipart/form-data, then parameter of each form field does not need to be encoded, but the charset of each form field should be in UTF-8 format. If the content type of the request is application/json, then the HTTP body should be included in signature generation but does not need to be URL encoded.
-- The signature generation process applies to calling APIs without the official API SDK. If you use the official API SDK, the SDK will generate the signature automatically.
+<!--end-->
