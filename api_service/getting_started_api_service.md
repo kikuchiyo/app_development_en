@@ -1,13 +1,14 @@
 # Getting started with api service
 
 ## Step1: Create an API group
+
 Users can log in to the configuration center to configure the parameters and information of the API gateway.
 
 After logging in to the configuration center, users use the operations shown below to configure the API Gateway.
 
-1) Create a group: On the API gateway, a group must be created before creating an API and may contain more than one API.
+1. Create a group: On the API gateway, a group must be created before creating an API and may contain more than one API.
 
-2) Enter the API list to create and manage APIs.
+2. Enter the API list to create and manage APIs.
 
 
 ## Step 2: Create an API
