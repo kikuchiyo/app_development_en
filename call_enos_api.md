@@ -1,6 +1,6 @@
 # Calling EnOS REST APIs
 
-This topic describes how to call EnOS REST APIs by assembling API request URL with parameters, generating signature, sending HTTP request, getting HTTP response, and parsing JSON results.
+This topic introduces the components required for calling EnOS API, including parameters to form the request URL, signature,  request method, request body, and the API response components.
 
 ## Components of Request
 
@@ -75,7 +75,6 @@ The following table lists the common response parameters of each API request.
 ### Common Response Parameters
 
 .. list-table::
-   :header-rows: 1
    :widths: 25 25 50
 
    * - Field
@@ -100,7 +99,6 @@ The following table lists the common response parameters of each API request.
 HTTP status code, ranging from 2xx success codes to 4xx or 5xx error codes, that indicates the status of the API invocation.
 
 .. list-table::
-   :header-rows: 1
 
    * - Status code
      - Description

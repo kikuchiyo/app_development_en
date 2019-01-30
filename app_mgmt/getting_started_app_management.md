@@ -4,7 +4,7 @@ This topic gets you started with application management on EnOS.
 
 ## Before You Begin
 
-Use the EnOS™ device connection service to connect your asset data into EnOS™ cloud. For more information, see [Device connection](https://docs.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html).
+Use the EnOS™ device connection service to connect your asset data into EnOS™ cloud. For more information, see [Device connection](https://www.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html).
 
 If you do not have devices to connect, you can use the device simulator that EnOS™ provides to simulate data transmission and build your application based on the simulated data. For more information, see [Simulating devices](simulating_device).
 

@@ -34,7 +34,7 @@ The **EnOS Service SDKs** support application development through calling EnOS R
 - [Include dependency in Maven project](https://mvnrepository.com/artifact/com.envisioniot/enos-api/2.1.0)
 - [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-java)
 
-- View [API Reference](https://docs.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
+- View [API Reference](https://www.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
 
 ### EnOS Service SDK for Python (Preview Edition)
 
@@ -46,7 +46,7 @@ The **EnOS Service SDKs** support application development through calling EnOS R
 
 - [Obtain source code from GitHub](https://github.com/EnvisionIot/enos-api-sdk-python)
 
-- View [API Reference](https://docs.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
+- View [API Reference](https://www.envisioniot.com/docs/app-development/en/latest/gettingstarted_api#step-2-accessing-api-documentation) from the EnOS Console
 
 
 

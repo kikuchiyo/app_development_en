@@ -31,13 +31,12 @@ You can obtain the EnOS SDKs through the following methods:
 2. In your main `pom.xml` file, add the SDK for Java as a dependency (take the EnOS Service SDK for Java as example):
 
    ```
-   java
-   	<dependency>
+    <dependency>
        <groupId>com.envisioniot</groupId>
        <artifactId>enos-api-sdk</artifactId>
        <version>2.1.0</version>
        <!--You might need to change the version number as you need.-->
-       </dependency>
+    </dependency>
    ```
 
 ### Install from PIP
