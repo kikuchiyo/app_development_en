@@ -25,7 +25,7 @@ In APP Framework, defining the organization information facilitates management o
 Information of the created organizations will be listed in the table on the organization management page. In this table, system administrator can change organization status, update organization information, and manage the list of applications that are assigned to the organization. See the following screen capture.
 
 .. image:: image/company_en.png
-   :width: 600px
+   
 
 ### Registering a public application
 
@@ -40,7 +40,7 @@ Public applications on EnOS platform can be assigned to organizations if needed.
 Information of the created applications will be listed in the table on the application management page. In this table, system administrator can change application status, update application information, and define application permissions. See the following screen capture.
 
 .. image:: image/public_app_en.png
-   :width: 600px
+   
 
 ### Defining application permissions
 
@@ -65,7 +65,7 @@ Application permissions are access control points to application resources that 
 Defined application permissions will be listed in the table on the permission management page of the application. In this table, system administrator can edit or delete defined permissions. See the following screen capture.
 
 .. image:: image/app_permission_en.png
-   :width: 600px
+   
 
 ### Assigning applications to an organization
 
@@ -80,7 +80,7 @@ Public applications on EnOS platform can be shared with users by assigning them 
 4. Click **Save**. See the following screen capture.
 
    .. image:: image/assign_app_en.png
-      :width: 600px
+      
 
 The assigned public applications will be listed on the **Application Management** page of the target organization.
 
@@ -99,7 +99,7 @@ Application resources and users of an organization must be managed by its own ad
 Created organization administrator accounts will be listed in the table on the administrator management page. In this table, system administrator can edit or delete accounts, or reset the account password. See the following screen capture.
 
 .. image:: image/create_ouadmin_en.png
-   :width: 600px
+   
 
 ##  For organization administrators
 
@@ -128,7 +128,7 @@ Private applications are usually developed for the internal use of an organizati
 Information of the created private applications will be listed in the table on the application management page with assigned public applications. In this table, organization administrator can change the status, update information of private applications, and define application permissions. See the following screen capture.
 
 .. image:: image/private_app_en.png
-   :width: 600px
+   
 
 ### Defining application permissions
 
@@ -149,7 +149,7 @@ To support application usage of both internal and external users, different type
 Created user accounts will be listed in the table on the user management page. In this table, organization administrator can edit or delete accounts, reset the account password, or manage user authorization. See the following screen capture.
 
 .. image:: image/create_user_en.png
-   :width: 600px
+   
 
 ### Managing user authorization
 
@@ -166,7 +166,7 @@ After a user account is created, organization administrator can manage the appli
 5. Click **Save**. See the following screen capture.
 
    .. image:: image/user_permission_en.png
-      :width: 600px
+      
 
 To grant platform management authorization to a user account, select **Settings Group** on the above page to expand the list of management permissions. Select one or more of the permissions (user management, application management, or desktop configuration) to grant for the user account.
 
@@ -189,4 +189,4 @@ When users log in the APP Framework, they can view the grouped applications on t
 Users are the consumer of applications. When logging in the APP Framework with the accounts created by organization administrator, users can see the authorized applications that they have permissions to access on the desktop. Users can click the application icon to open it and view the authorized resources. See the following screen capture.
 
 .. image:: image/user_view.png
-   :width: 600px
+   

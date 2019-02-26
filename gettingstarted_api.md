@@ -44,11 +44,11 @@ To access the API documentation, go to **EnOS API > API Documents**. Summary of 
 
 .. image:: media/List_of_APIs.png
    :alt: Figure 1. Accessing EnOS API documentation from EnOS Console
-   :width: 600px
+   
 
 .. image:: media/Example_of_API_details.png
    :alt: Figure 2. Example of API documentation
-   :width: 600px
+   
 
 ## Step 3: Calling EnOS API
 

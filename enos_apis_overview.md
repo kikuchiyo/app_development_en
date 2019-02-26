@@ -1,4 +1,4 @@
-# EnOS API Overview
+# EnOS APIs
 
 EnOS™ provides abundant APIs covering various core business flows of the platform. Based on these APIs, developers can register, obtain, modify, and delete authorized resources (including device assets, personnel, applications, and privileges).
 
@@ -25,7 +25,7 @@ EnOS REST APIs can be called through HTTP protocol. You can choose one of the fo
 The figure below shows the process of calling EnOS API:
 
 .. image:: media/api_calling_process.png
-   :width: 600px
+
 
 ## Related Links
 

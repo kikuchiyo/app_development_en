@@ -1,4 +1,4 @@
-# EnOS SDK Overview
+# EnOS SDKs
 
 EnOS provides official SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application management. This topic provides and overview of EnOS SDKs.
 
