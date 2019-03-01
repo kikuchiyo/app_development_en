@@ -1,4 +1,5 @@
-# User Guide
+# Application Registration User Guide
+
 This guide introduces how system administrators and organization administrators define application permissions, assign application resources to users, and manage user accounts on EnOS APP Framework.
 
 ##  For system administrators
@@ -25,28 +26,28 @@ In APP Framework, defining the organization information facilitates management o
 Information of the created organizations will be listed in the table on the organization management page. In this table, system administrator can change organization status, update organization information, and manage the list of applications that are assigned to the organization. See the following screen capture.
 
 .. image:: image/company_en.png
-   
+
 
 ### Registering a public application
 
 Public applications on EnOS platform can be assigned to organizations if needed. System administrator can take the following steps to register a public application on the APP Framework.
 
-1. Click **Application Management** in the left control panel and click the **+ New Application** button.
+1. Click **Application Registration** in the left control panel and click the **+ New Application** button.
 
 2. On the **New Application** pop-up window, enter the name, URL, and description of the application, and select the background color, icon, and status for the application.
 
 3. Click **Save** to complete registering the public application.
 
-Information of the created applications will be listed in the table on the application management page. In this table, system administrator can change application status, update application information, and define application permissions. See the following screen capture.
+Information of the created applications will be listed in the table on the Application Registration page. In this table, system administrator can change application status, update application information, and define application permissions. See the following screen capture.
 
 .. image:: image/public_app_en.png
-   
+
 
 ### Defining application permissions
 
 Application permissions are access control points to application resources that are pre-defined by application developers using the EnOS Web SDK. Application permissions can be classified into several types like menu, UI view, and data, which can be granted to different users based on business requirements. System administrator can take the following steps to define application permissions on the APP Framework.
 
-1. Click **Application Management** in the left control panel.
+1. Click **Application Registration** in the left control panel.
 
 2. In the table of applications, click the **Permission** icon for the target application to open the permission management page.
 
@@ -65,7 +66,7 @@ Application permissions are access control points to application resources that 
 Defined application permissions will be listed in the table on the permission management page of the application. In this table, system administrator can edit or delete defined permissions. See the following screen capture.
 
 .. image:: image/app_permission_en.png
-   
+
 
 ### Assigning applications to an organization
 
@@ -80,9 +81,9 @@ Public applications on EnOS platform can be shared with users by assigning them 
 4. Click **Save**. See the following screen capture.
 
    .. image:: image/assign_app_en.png
-      
 
-The assigned public applications will be listed on the **Application Management** page of the target organization.
+
+The assigned public applications will be listed on the **Application Registration** page of the target organization.
 
 ### Creating an organization administrator account
 
@@ -99,7 +100,7 @@ Application resources and users of an organization must be managed by its own ad
 Created organization administrator accounts will be listed in the table on the administrator management page. In this table, system administrator can edit or delete accounts, or reset the account password. See the following screen capture.
 
 .. image:: image/create_ouadmin_en.png
-   
+
 
 ##  For organization administrators
 
@@ -117,7 +118,7 @@ Private applications are usually developed for the internal use of an organizati
 
 1. Log in the APP Framework with the organization administrator account and click the **Settings** icon to open the page for system settings.
 
-2. Click **Application Management** in the left control panel. If there are public applications assigned to the organization, they will be listed in the table.
+2. Click **Application Registration** in the left control panel. If there are public applications assigned to the organization, they will be listed in the table.
 
 3. Click the **+ New Application** button.
 
@@ -125,10 +126,10 @@ Private applications are usually developed for the internal use of an organizati
 
 5. Click **Save** to complete registering the private application.
 
-Information of the created private applications will be listed in the table on the application management page with assigned public applications. In this table, organization administrator can change the status, update information of private applications, and define application permissions. See the following screen capture.
+Information of the created private applications will be listed in the table on the Application Registration page with assigned public applications. In this table, organization administrator can change the status, update information of private applications, and define application permissions. See the following screen capture.
 
 .. image:: image/private_app_en.png
-   
+
 
 ### Defining application permissions
 
@@ -149,7 +150,7 @@ To support application usage of both internal and external users, different type
 Created user accounts will be listed in the table on the user management page. In this table, organization administrator can edit or delete accounts, reset the account password, or manage user authorization. See the following screen capture.
 
 .. image:: image/create_user_en.png
-   
+
 
 ### Managing user authorization
 
@@ -166,9 +167,9 @@ After a user account is created, organization administrator can manage the appli
 5. Click **Save**. See the following screen capture.
 
    .. image:: image/user_permission_en.png
-      
 
-To grant platform management authorization to a user account, select **Settings Group** on the above page to expand the list of management permissions. Select one or more of the permissions (user management, application management, or desktop configuration) to grant for the user account.
+
+To grant platform management authorization to a user account, select **Settings Group** on the above page to expand the list of management permissions. Select one or more of the permissions (user management, application registration, or desktop configuration) to grant for the user account.
 
 With the granted application permissions, users can log in the platform, click the application icon, and use the application to access the authorized resources.
 
@@ -189,4 +190,3 @@ When users log in the APP Framework, they can view the grouped applications on t
 Users are the consumer of applications. When logging in the APP Framework with the accounts created by organization administrator, users can see the authorized applications that they have permissions to access on the desktop. Users can click the application icon to open it and view the authorized resources. See the following screen capture.
 
 .. image:: image/user_view.png
-   

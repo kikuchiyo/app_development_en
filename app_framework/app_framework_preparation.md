@@ -7,7 +7,7 @@ EnOS system defines application resources as application access controls, which 
 The following table shows how to define application permissions:
 
 | Permission name           | Permission ID (Element ID) | Permission type |
-| ------------------------- | -------------------------- | --------------- |
+|:--------------------------|:---------------------------|:----------------|
 | Monitor menu              | menu.monitor               | Menu            |
 | Report menu               | menu.report                | Menu            |
 | Monitor #1 view           | monitor.1                  | UI View         |
@@ -35,7 +35,7 @@ npm install @enos/portalsdk --save
 
 ### API
 
-The APP Framework provides APIs for application management. Applications can retrieve user information and control page operations through the EnOS Web SDK.
+The APP Framework provides APIs for application registration. Applications can retrieve user information and control page operations through the EnOS Web SDK.
 
 Calling the APIs requires importing the portalSdk module.
 
@@ -54,7 +54,7 @@ EnOS Web SDK provides the React `Menu` component, which supports unified display
 ##### Parameters of the `Menu` component
 
 | Property     | Description                     | Type     |
-| ------------ | ------------------------------- | -------- |
+|:-------------|:--------------------------------|:---------|
 | menus        | Collection of menu data         | array    |
 | permissions  | Permissions of the current user | array    |
 | onSelectMenu | Callback for selected menu      | function |
@@ -114,7 +114,7 @@ Add the `meta-enos-view-id` attribute for elements that need `View` access contr
 
 Add permissions with the type `View` in the App management module and assign corresponding application permissions to specific users.
 
-If users do not have the `View` permission, the `UI View` will not be visible to the users. To reserve page render place for this kind of `UI View`, add the `meta-enos-view-reserve=‘true’` attribute for the element. 
+If users do not have the `View` permission, the `UI View` will not be visible to the users. To reserve page render place for this kind of `UI View`, add the `meta-enos-view-reserve=‘true’` attribute for the element.
 
 ##### Configuration sample for elements
 
@@ -156,4 +156,4 @@ portalSdk.getDataPermissions();
 
 ## Deploying application
 
-Deploy the application online when application permissions are configured. The application URL is required when system administrator or organization administrator registers the application on the APP Framework. 
+Deploy the application online when application permissions are configured. The application URL is required when system administrator or organization administrator registers the application on the APP Framework.

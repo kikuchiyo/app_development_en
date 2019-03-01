@@ -1,6 +1,6 @@
 # EnOS SDKs
 
-EnOS provides official SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application management. This topic provides and overview of EnOS SDKs.
+EnOS provides official SDKs to support users and developers on device connection, device registration, data ingestion, application development, and application registration. This topic provides and overview of EnOS SDKs.
 
 
 
@@ -66,6 +66,6 @@ The **EnOS IoT SDK for C** supports the following functions APIs for X.509 certi
 
 <!-- ## EnOS Appframework Mars
 
-The EnOS Appframework Mars SDK provides a framework and a set of easy-to-use APIs for application management (including permission authentication method) and application development.
+The EnOS Appframework Mars SDK provides a framework and a set of easy-to-use APIs for Application Registration (including permission authentication method) and application development.
 
 - [Include dependency in Maven project](https://mvnrepository.com/artifact/com.envisioniot/enos-appframework-mars/0.1.0) -->

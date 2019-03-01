@@ -1,6 +1,6 @@
-# Getting Started with Application Management
+# Getting Started with Application Registration
 
-This topic gets you started with application management on EnOS.
+This topic gets you started with application registration on EnOS.
 
 ## Before You Begin
 
@@ -12,7 +12,7 @@ If you do not have devices to connect, you can use the device simulator that EnO
 
 EnOS™ provides a complete application development process to help you access the data through EnOS APIs and perform application development offline.
 
-Click **Application Management** from the left navigation panel and click **New App**, fill in the application information and save. The application is successfully registered.
+Click **Application Registration** from the left navigation panel and click **New App**, fill in the application information and save. The application is successfully registered.
 
 ## Step 2: Purchase the Application
 

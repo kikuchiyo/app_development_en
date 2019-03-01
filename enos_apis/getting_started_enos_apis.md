@@ -18,7 +18,7 @@ To request the EnOS APIs, you need to register an application in the EnOS cloud 
 
 An application must have the permission to invoke an API, and any application currently registered on EnOS™ has the permission to invoke EnOS™ APIs. The resource authorization, that is which devices or data you can access through the API, is enforced through IAM at the account level.
 
-To register an application, click **Application management** from the left navigation panel. For more information, see [Application management](../app_mgmt/app_mgmt_overview).
+To register an application, click **Application Registration** from the left navigation panel. For more information, see [Application Registration](../app_mgmt/app_mgmt_overview).
 
 After the application is successful registered, EnOS assigns a pair of application key and secret. You can view the application details to access the assigned key-secret pair.
 
