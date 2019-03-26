@@ -236,7 +236,7 @@ latex_elements = {
 
             \vspace{5mm}
 
-            \huge \textmd{Version}\textbf{ latest}
+            \huge \textmd{Version}\textbf{ 1.0}
             %% \vfill adds at the bottom
             \vfill
             \centerline{\fontsize{16pt}{\baselineskip}\selectfont \textbf{Envision Digital}}
