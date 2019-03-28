@@ -53,7 +53,7 @@ The following table lists the common request parameters required by each EnOS AP
    * - sign
      - String
      - Yes
-     - The API request signature that is generated based on the accessKey, secretKey, timestamp, and API request parameters. Signature can prevent API requests from malicious tempering. The API gateway will verify the signature, and rejects a request when its signature is invalid. Currently, SHA-1 algorithm is used for generating signature. For more information, see Generating signature.
+     - The API request signature that is generated based on the accessKey, secretKey, timestamp, and API request parameters. Signature can prevent API requests from malicious tempering. The API gateway will verify the signature and reject a request if its signature is invalid. Currently, SHA-256 algorithm is used for generating the signature. For more information, see [Generating Signature for API Requests](https://www.envisioniot.com/docs/app-development/en/latest/generating_signature.html).
 
 ### Business Parameters
 
@@ -195,6 +195,7 @@ http://xxx.envisioniot.com/enosapi/connectService/products/12345?orgId=123&produ
 ```
 
 .. note:: - Both the request parameters and response data are in UTF-8 format. Parameters and values must be URL-encoded. If the content type of the request is application/x-www-form-urlencoded, then parameters in the request body must also be URL-encoded. If the content type of the request is multipart/form-data, then parameter of each form field does not need to be encoded, but the charset of each form field should be in UTF-8 format. If the content type of the request is application/json, then the HTTP body should be included in signature generation but does not need to be URL encoded.
-         - the signature generation process applies to calling apis without the official api sdk. if you use the official api sdk, the sdk will generate the signature automatically.
+
+         - The signature generation process applies to calling apis without the official api sdk. if you use the official api sdk, the sdk will generate the signature automatically.
 
 <!--end-->
