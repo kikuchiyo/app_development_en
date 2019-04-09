@@ -34,6 +34,7 @@
    :caption: Related services
 
    generating_signature
+   api_authorization_list
 
 
 Downloads

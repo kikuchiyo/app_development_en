@@ -22,7 +22,7 @@ Invoking APIs requires three types of parameters:
 
 ## Before You Start
 
-Ensure you have resources on EnOS that you are authorized to access. The resources can be devices, data, events, user accounts, and so on. So before you start using EnOS APIs, you typically have finished connecting your devices and data into EnOS, and have a user account that has proper access policies assigned through EnOS IAM function.
+Ensure that you have resources on EnOS to which you are authorized to access. The resources can be devices, data, events, user accounts, and so on. The related authorization can be Read, Control, Write, FullAccess, and so on. Therefore, before you start using EnOS APIs, you typically have finished connecting your devices and data into EnOS, and have a user account that has proper access policies assigned through EnOS IAM function. For more information about API access control, see [API Access Authorization](api_authorization_list).
 
 ## Step 1: Registering an Application
 
@@ -44,11 +44,11 @@ To access the API documentation, go to **EnOS API > API Documents**. Summary of 
 
 .. image:: media/List_of_APIs.png
    :alt: Figure 1. Accessing EnOS API documentation from EnOS Console
-   
+
 
 .. image:: media/Example_of_API_details.png
    :alt: Figure 2. Example of API documentation
-   
+
 
 ## Step 3: Calling EnOS API
 
